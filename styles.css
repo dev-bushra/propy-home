@@ -641,8 +641,8 @@ img {
 } */
 
 .css-3m65ns {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px,
-    rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px,
+    rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px; */
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -650,6 +650,8 @@ img {
   flex-shrink: 0;
   position: relative;
   /* background-color: rgb(55, 166, 251); */
+  /* background: #ffffff8c !important; */
+    backdrop-filter: blur(10px) !important;
   color: rgba(0, 0, 0, 0.87);
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 15px;
@@ -990,4 +992,24 @@ img {
 .blure_bg {
     backdrop-filter: blur(5px) !important;
     background-color: #ffffffa1 !important;
+}
+.css-191lty2 {
+    border-radius: 16px;
+    background: #ffffff8c !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+/* Featured Listings */
+.villas_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.villa_card {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
 }
