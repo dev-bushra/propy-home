@@ -986,3 +986,8 @@ img {
     height: 80px;
     border-radius: 50%;
 }
+
+.blure_bg {
+    backdrop-filter: blur(5px) !important;
+    background-color: #ffffffa1 !important;
+}
