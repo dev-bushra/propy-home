@@ -651,7 +651,7 @@ img {
   position: relative;
   /* background-color: rgb(55, 166, 251); */
   /* background: #ffffff8c !important; */
-    backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(10px) !important;
   color: rgba(0, 0, 0, 0.87);
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 15px;
@@ -915,101 +915,157 @@ img {
   border-radius: 15px;
 }
 
-
 /* agent_leader_dashboard */
 .agent_leader_dashboard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    margin: 2rem auto;
-    width: 100%;
-    /* padding: 2rem 0rem; */
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin: 2rem auto;
+  width: 100%;
+  /* padding: 2rem 0rem; */
 }
 .agent_list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 .agent_card {
-    width: auto;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 16px;
-    border-radius: 15px;
-    overflow: auto;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14);
+  width: auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+  border-radius: 15px;
+  overflow: auto;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14);
 }
 .agent_details {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: .5px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5px;
 }
 
 .agent_details .name {
-    font-weight: bold;
-    font-size: 1.28rem;
+  font-weight: bold;
+  font-size: 1.28rem;
 }
 .agent_details .details {
-    font-weight: 400; 
-    font-size: 1.2rem;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
 .price_data {
-    margin: 0px;
-    margin-left: 2rem;
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 0.875rem;
-    line-height: 1.57;
-    letter-spacing: 0.00714em;
-    font-weight: bold;
-    color: white;
-    align-items: center;
-    padding-top: 4px;
-    padding-left: 16px;
-    border-radius: 24px;
-    padding-right: 16px;
-    padding-bottom: 4px;
-    justify-content: center;
-    background-color: rgba(0, 123, 218, 1);
+  margin: 0px;
+  margin-left: 2rem;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.57;
+  letter-spacing: 0.00714em;
+  font-weight: bold;
+  color: white;
+  align-items: center;
+  padding-top: 4px;
+  padding-left: 16px;
+  border-radius: 24px;
+  padding-right: 16px;
+  padding-bottom: 4px;
+  justify-content: center;
+  background-color: rgba(0, 123, 218, 1);
 }
 .agent_card img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 
 .blure_bg {
-    backdrop-filter: blur(5px) !important;
-    background-color: #ffffffa1 !important;
+  backdrop-filter: blur(5px) !important;
+  background-color: #ffffffa1 !important;
 }
 .css-191lty2 {
-    border-radius: 16px;
-    background: #ffffff8c !important;
-    backdrop-filter: blur(10px) !important;
+  border-radius: 16px;
+  background: #ffffff8c !important;
+  backdrop-filter: blur(10px) !important;
 }
 
 /* Featured Listings */
 .villas_cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0rem;
 }
 .villa_card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.villa_card .details {
+  display: flex;
+  flex-direction: column;
+}
+.villa_card .details .t {
+  font-size: 24px;
+  font-weight: bold;
+}
+.villa_card .details .st {
+  font-size: 14px;
+}
+.vilass_icons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.villa_card .details .ddetails {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.villa_card .details .ddetails .icon {
+  max-width: 14px;
+  max-height: 14px;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+.villa_card .details .btn {
+  margin-top: 1rem;
+  padding: 8px 15px;
+  border-radius: 50px;
+  background-color: rgb(239, 239, 239);
+  color: rgb(17, 17, 17);
+  width: fit-content;
+  font-size: 12px;
+}
+
+.villa_card img {
+  height: 250px;
+  width: 324px;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 8px;
+}
+.jss152 {
     display: flex;
-    align-items: start;
-    justify-content: start;
-    gap: 1rem;
-    padding: 2rem;
-    border-radius: 10px;
+    margin-top: 32px;
+    justify-content: center;
+}
+.bTkfSS {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: inherit;
 }
