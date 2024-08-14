@@ -1059,13 +1059,351 @@ img {
   border-radius: 8px;
 }
 .jss152 {
-    display: flex;
-    margin-top: 32px;
-    justify-content: center;
+  display: flex;
+  margin-top: 32px;
+  justify-content: center;
 }
 .bTkfSS {
-    text-decoration: none;
-    cursor: pointer;
-    font-weight: 500;
-    color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: inherit;
 }
+
+/* Generate Proof of Funds */
+.generate_proof {
+  margin: 3rem auto;
+  /* background-image: url('./assets/generate_proof_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+  /* width: 100%; */
+  /* height: 270px; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  /* padding: 2rem; */
+  position: relative;
+}
+.generate_proof_details {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0;
+  right: 0;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.generate_proof_details h1 {
+  font-size: 36px;
+  font-weight: bold !important;
+  margin: 0px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.334;
+  letter-spacing: 0em;
+  text-shadow: 2px 2px 8px #000;
+}
+.generate_proof_details span {
+  font-size: 18px;
+  max-width: 46%;
+  margin: 0px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.334;
+  letter-spacing: 0em;
+  text-shadow: 2px 2px 8px #000;
+  margin-bottom: 16px;
+  font-weight: lighter !important;
+}
+.generate_proof_details .btn {
+  font-size: 14px;
+  font-weight: normal;
+  max-width: fit-content;
+  text-decoration: none;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  text-shadow: 2px 2px 8px #000;
+  margin-top: 15px;
+  font-weight: 300;
+  background-color: #007bff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  color: white;
+}
+
+/* Research-backed Inventions */
+.research_backed {
+  background-color: #f7f7f7;
+  width: 100%;
+  min-height: 40vh;
+  margin: 5rem auto;
+  transform: translateY(0px);
+  background-blend-mode: color-burn;
+
+  box-shadow: 0px 0px 20px 0px #00000026;
+  border-radius: 8px;
+  background-size: cover;
+  background-image: url("https://propy.com/home/static/media/research.97c7edfcafc24b05951b.webp");
+  background-position: center;
+}
+.details_wraper {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 5rem;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.details_wraper h1 {
+  margin: 0px;
+  font-family: Inter;
+  line-height: 1;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0em;
+}
+.details_wraper p {
+  margin: 0px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.334;
+  letter-spacing: 0em;
+}
+.details_wraper .univs_imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem auto;
+}
+.details_wraper .univs_imgs img {
+  width: 125px;
+  height: 40px;
+}
+.details_wraper .tow_cards {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+.details_wraper .card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  border-left: 5px solid #007bff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.details_wraper .card .t {
+  margin: 0px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.334;
+  letter-spacing: 0em;
+}
+.details_wraper .card .q {
+  margin: 0px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+  font-weight: 300;
+  line-height: 1.3;
+}
+.wo {
+  border: 0.1px solid #dddd !important;
+}
+/* From our Clients */
+.from_clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 5rem auto;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title h1 {
+  margin: 0px !important;
+  font-family: Inter !important;
+  line-height: 1 !important;
+  font-size: 2.5rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0em !important;
+  font-weight: 700 !important;
+  margin-bottom: 8px !important;
+}
+.title span {
+  margin: 0px !important;
+  font-family: Roboto, Helvetica, Arial, sans-serif !important;
+  font-weight: lighter !important;
+  font-size: 1.5rem !important;
+  line-height: 1.334 !important;
+  letter-spacing: 0em !important;
+}
+.content .card {
+  padding: 3rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14);
+}
+.content .card .img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content .card .img img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.content .card .img .name {
+  margin: 0px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+  text-align: center;
+  line-height: 1.2;
+}
+.content .card .sub {
+  text-align: center;
+  line-height: 1.2;
+  margin: 0px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+}
+.content .card .qute {
+  font-size: 1.25em;
+  max-width: 800px;
+  text-align: center;
+  font-weight: lighter !important;
+  line-height: 1.35;
+  text-align: center;
+  line-height: 1.35;
+  color: #9b9b9b;
+  font-style: italic;
+}
+
+/* Featured by Propy */
+.featured_propy {
+}
+
+.featured_propy .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem auto;
+  width: 100%;
+  gap: 2rem;
+}
+.featured_propy .content .card {
+  padding: 2rem !important;
+  width: 45% !important;
+  max-width: 45% !important;
+}
+.featured_propy .content .card .img_d {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  width: fit-content !important;
+  max-width: fit-content !important;
+}
+.featured_propy .content .card .img_d img {
+  width: 100px;
+  height: 100px;
+}
+.featured_propy .content .card .img_d .d_details {
+  display: flex;
+  flex-direction: column;
+  width: fit-content !important;
+  max-width: fit-content !important;
+}
+
+.featured_propy .content .card .img_d .d_details .sub {
+  text-align: start !important;
+  font-size: small !important;
+  margin-top: 0.5rem;
+  width: fit-content !important;
+  max-width: fit-content !important;
+}
+
+.featured_propy .content .card .img_d .d_details .name {
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+  width: fit-content !important;
+  max-width: fit-content !important;
+}
+
+/* add_bottom_cards */
+.add_bottom_cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5rem auto;
+}
+
+.add_bottom_cards .cs {
+  background-image: url("https://vagabond-public-storage.s3.eu-west-2.amazonaws.com/63c3672f62b230fce5772173.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32%;
+  height: 60vh;
+  border-radius: 20px;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  margin: 0;
+
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14);
+}
+.cs h2 {
+  text-align: start;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+.cs span {
+  font-size: 14px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  background-color: #eee;
+  color: black;
+}
+
+
+/* Footer */
