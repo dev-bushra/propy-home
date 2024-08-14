@@ -117,9 +117,9 @@ footer {
   position: relative;
   text-align: center;
   align-items: center;
-  padding-top: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-bottom: 32px;
-  padding-bottom: 8px;
   justify-content: center;
   background-color: black;
 }
@@ -147,8 +147,8 @@ footer {
 }
 .css-vubbuv {
   user-select: none;
-  width: 1em;
-  height: 1em;
+  width: 3em;
+  height: 3em;
   display: inline-block;
   fill: currentcolor;
   flex-shrink: 0;
@@ -699,8 +699,8 @@ img {
   margin: 0px;
   font-family: Inter;
   line-height: 1;
-  font-size: 2.5rem;
-  font-weight: 400;
+  font-size: 15px !important;
+  font-weight: bold;
   letter-spacing: 0em;
 }
 
@@ -994,8 +994,9 @@ img {
 }
 .css-191lty2 {
   border-radius: 16px;
-  background: #ffffff8c !important;
-  backdrop-filter: blur(10px) !important;
+  position: sticky !important;
+  /* background: #ffffff8c !important; */
+  /* backdrop-filter: blur(10px) !important; */
 }
 
 /* Featured Listings */
@@ -1457,7 +1458,7 @@ footer {
   font-size: 14px;
   margin-bottom: 10px;
   font-weight: normal !important;
-  color: #CCCCCC;
+  color: #cccccc;
 }
 
 .footer-links ul {
@@ -1466,7 +1467,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: .4rem;
+  gap: 0.4rem;
 }
 
 .footer-links li {
@@ -1503,4 +1504,65 @@ footer {
 
 .footer-bottom a:hover {
   text-decoration: underline;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.css-191lty2 {
+    display: none;
+  }
+  .jss65 {
+    margin: 1rem;
+    display: block;
+    min-width: 100% !important;
+    position: absolute;
+    top: 10px;
+  }
+  .jss67 {
+    display: block;
+    min-width: 100% !important;
+    
+    position: absolute;
+    bottom: -10px;
+  }
+  .custom_titleee {
+    font-size: 28px !important;
+  }
+  .custom_suibtitleee {
+    font-size: 18px !important;
+    margin: 10px auto !important;
+  }
+  .villa_card{
+    width: 100% !important;
+  }
+  .generate_proof_details {
+    gap: 0 !important;
+  }
+  .generate_proof_details h1 {
+    font-size: 18px !important;
+  }
+  .generate_proof_details span {
+    font-size: 16px !important;
+  }
+  .tow_cards {
+    flex-direction: column;
+  }
+  .add_bottom_cards {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+}
+.cs {
+  width: 95% !important;
+  /* margin: 1.5rem; */
+}
+.content {
+  flex-direction: column;
+}
+.featured_propy .content .card {
+  width: 100% !important;
+  max-width: 100% !important;
+}
 }
