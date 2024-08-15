@@ -1003,6 +1003,7 @@ img {
 .villas_cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 0rem;
 }
 .villa_card {
@@ -1129,6 +1130,27 @@ img {
   margin-top: 15px;
   font-weight: 300;
   background-color: #007bff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  color: white;
+}
+.ShowFullLeaderboard {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.ShowFullLeaderboard .btn {
+  font-size: 16px !important;
+  font-weight: bolder !important;
+  max-width: fit-content;
+  text-decoration: none;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  text-shadow: 2px 2px 8px #000;
+  margin-bottom: 35px;
+  font-weight: 300;
+  background-color: #172534;
   padding: 0.5rem 1.5rem;
   border-radius: 20px;
   color: white;
@@ -1328,7 +1350,32 @@ img {
   padding: 2rem !important;
   width: 45% !important;
   max-width: 45% !important;
+  cursor: pointer;
 }
+
+/* =============== */
+.btn_hover {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn_hover:hover {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* background-color: #dddddd08; */
+}
+.card_hover {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card_hover:hover {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #dddddd08;
+}
+.agent_card.card_hover {
+  min-width: 515px;
+}
+/* ======== */
 .featured_propy .content .card .img_d {
   display: flex;
   gap: 1.5rem;
@@ -1350,10 +1397,11 @@ img {
 
 .featured_propy .content .card .img_d .d_details .sub {
   text-align: start !important;
-  font-size: small !important;
+  font-size: 14px !important;
   margin-top: 0.5rem;
   width: fit-content !important;
   max-width: fit-content !important;
+  font-weight: bolder;
 }
 
 .featured_propy .content .card .img_d .d_details .name {
@@ -1370,14 +1418,21 @@ img {
   justify-content: space-between;
   margin: 5rem auto;
 }
-
-.add_bottom_cards .cs {
+.cs3 {
+  background-image: url("https://vagabond-public-storage.s3.eu-west-2.amazonaws.com/63211b134b679ead16f634fe.jpg");
+}
+.cs2 {
+  background-image: url("https://vagabond-public-storage.s3.eu-west-2.amazonaws.com/639ba35d03d18e8bd5976328.jpg");
+}
+.cs1 {
   background-image: url("https://vagabond-public-storage.s3.eu-west-2.amazonaws.com/63c3672f62b230fce5772173.jpg");
+}
+.add_bottom_cards .cs {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 32%;
-  height: 60vh;
+  height: 20rem;
   border-radius: 20px;
   padding: 1rem;
   position: relative;
@@ -1506,8 +1561,6 @@ footer {
   text-decoration: underline;
 }
 
-
-
 /* Responsive */
 @media (max-width: 768px) {
   .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.css-191lty2 {
@@ -1523,7 +1576,7 @@ footer {
   .jss67 {
     display: block;
     min-width: 100% !important;
-    
+
     position: absolute;
     bottom: -10px;
   }
@@ -1534,7 +1587,7 @@ footer {
     font-size: 18px !important;
     margin: 10px auto !important;
   }
-  .villa_card{
+  .villa_card {
     width: 100% !important;
   }
   .generate_proof_details {
@@ -1553,16 +1606,51 @@ footer {
     flex-direction: column;
     width: 100%;
     gap: 1.5rem;
+  }
+  .cs {
+    width: 95% !important;
+    /* margin: 1.5rem; */
+  }
+  .content {
+    flex-direction: column;
+  }
+  .featured_propy .content .card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+  }
+  .footer-links {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-items: start !important;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    padding: 0;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .footer-links div {
+    margin: 0;
+    max-width: fit-content;
+  }
+  .blog_footer {
+    display: none;
+  }
+  .subscribe_ewsletter {
+    display: none;
+  }
 }
-.cs {
-  width: 95% !important;
-  /* margin: 1.5rem; */
-}
-.content {
-  flex-direction: column;
-}
-.featured_propy .content .card {
-  width: 100% !important;
-  max-width: 100% !important;
-}
+
+.subscribe_ewsletter img {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
 }
